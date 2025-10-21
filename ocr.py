@@ -145,7 +145,7 @@ for row in sorted_rows:
         detected_num = tube_identification(num_region)
         row_numbers.append(detected_num)
     detected_rows.append(row_numbers)
-cv2.waitKey(0)
+
 if len(detected_rows) <= 1:
     print("未检测到多行数字，无法输出结果")
     cv2.destroyAllWindows()
@@ -163,5 +163,5 @@ for num in detected_rows[1]:
         pressure[1] = pressure[1]*10 + num
 print("组合输出：")
 print(pressure)
-
+cv2.waitKey(0)
 cv2.destroyAllWindows()
