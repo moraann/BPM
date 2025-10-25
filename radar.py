@@ -177,7 +177,7 @@ def update_plot(frame, axs, line):
     axs[0,1].axis("off")
 
     # 体动幅度趋势
-    axs[1,0].set_title("体动幅度趋势（0-100，手册8.2章）", fontsize=10)
+    axs[1,0].set_title("体动幅度趋势", fontsize=10)
     axs[1,0].plot(x_range, current_data["motion_amplitude"], 'b-', linewidth=2, label="体动幅度")
     axs[1,0].set_xlabel("时间")
     axs[1,0].set_ylabel("幅度")
